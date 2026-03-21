@@ -24,13 +24,13 @@ def load_data():
     np.random.seed(42)
     n = 99441
     REGIONS   = ['Southeast','Northeast','South','North','Central-West']
-    REG_W     = [0.62,0.18,0.13,0.05,0.03]
+    REG_W     = [0.62,0.18,0.12,0.05,0.03]
     STATES    = ['SP','RJ','MG','BA','RS','PR','CE','PE','GO','DF']
     CATS      = ['Electronics','Fashion','Home & Garden','Sports','Beauty',
                  'Toys & Games','Auto Parts','Books','Health','Food']
-    CAT_W     = [0.14,0.22,0.17,0.11,0.14,0.09,0.05,0.09,0.07,0.09]
+    CAT_W     = [0.13,0.20,0.15,0.10,0.12,0.08,0.05,0.08,0.05,0.04]
     PAYMENTS  = ['credit_card','boleto','debit_card','voucher']
-    PAY_W     = [0.74,0.20,0.02,0.06]
+    PAY_W     = [0.73,0.20,0.02,0.05]
 
     dates = pd.date_range('2016-09-04','2018-08-28', periods=n)
     region    = np.random.choice(REGIONS, n, p=REG_W)
